@@ -1,54 +1,110 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/public/output.css" />
-  </head>
-  <body>
-    <header>
-      <nav
-        class="flex flex-row mt-0 ml-0 p-2.5 px-6 py-6 font-semibold bg-white sticky top-0 z-50"
-      >
-        <div class="flex-none mt-0">
-          <a href="#"
-            ><img src="/imgs/Pinterest-Logo.png" alt="pintrest logo"
-          /></a>
-        </div>
-        <div class="flex-none mx-2 px-2 py-1.5 hover:bg-gray-300 rounded">
-          <a href="/html/Watch.html">Watch</a>
-        </div>
-        <div class="flex-none mx-2 px-2 py-1.5 hover:bg-gray-300 rounded">
-          <a href="/html/Explore.html">Explore</a>
-        </div>
-        <div class="flex-auto"></div>
-        <div class="flex-none mr-7 mt-1.5 hover:underline">
-          <a href="/html/About.html">About</a>
-        </div>
-        <div class="flex-none mr-7 mt-1.5 hover:underline">
-          <a href="/html/Business.html">Business</a>
-        </div>
-        <div class="flex-none mr-7 mt-1.5 hover:underline">
-          <a href="/html/Blog.html">Blog</a>
-        </div>
-        <div
-          class="flex-none mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white"
-        >
-          <a href="/html/Blog.html">Log In</a>
-        </div>
-        <div
-          class="flex-none bg-gray-300 py-1.5 px-2 hover:bg-gray-400 rounded-full"
-        >
-          <a href="/html/Blog.html">Sign Up</a>
-        </div>
-      </nav>
-    </header>
-    <div class="snap-y snap-mandatory overflow-scroll h-lvh">
-      <div class="snap-start flex h-lvh w-svw bg-slate-300"></div>
-      <div class="snap-start flex h-lvh w-svw bg-slate-400"></div>
-      <div class="snap-start flex h-lvh w-svw bg-slate-500"></div>
-      <div class="snap-start flex h-lvh w-svw bg-slate-600"></div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="/public/output.css" />
+
+</head>
+
+<body class="h-screen select-none ">
+  <nav>
+    <div class="flex font-semibold bg-white mt-0 ml-0 p-2.5 px-6 py-6">
+      <div class="flex-none mt-0">
+        <a href="#"><img src="/imgs/Pinterest-Logo.png" alt="pintrest logo" /></a>
+      </div>
+      <div class="flex-none mx-2 px-2 py-1.5 hover:bg-gray-300 rounded">
+        <a href="/html/Watch.html">Watch</a>
+      </div>
+      <div class="flex-none mx-2 px-2 py-1.5 hover:bg-gray-300 rounded">
+        <a href="/html/Explore.html">Explore</a>
+      </div>
+      <div class="flex-auto"></div>
+      <div class="flex-none mr-7 mt-1.5 hover:underline">
+        <a href="/html/About.html">About</a>
+      </div>
+      <div class="flex-none mr-7 mt-1.5 hover:underline">
+        <a href="/html/Business.html">Business</a>
+      </div>
+      <div class="flex-none mr-7 mt-1.5 hover:underline">
+        <a href="/html/Blog.html">Blog</a>
+      </div>
+      <div id="login" class="flex-none mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white">
+        <button>Log In</button>
+      </div>
+      <div class="flex-none bg-gray-300 py-1.5 px-2 hover:bg-gray-400 rounded-full">
+        <button>Sign Up</button>
+      </div>
     </div>
-  </body>
+  </nav>
+
+
+
+
+
+  <div id="loginpage"
+    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center">
+    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center text-center">
+      <div class="flex">
+        <img src="/imgs/Pinterest-Logo.png" alt="logo">
+        <div class="grow"></div>
+        <button id="close" class="bg-red-400 rounded-md px-5">X</button>
+      </div>
+      <h2 class="text-xl font-bold mb-4">Welcome to Pinterest</h2>
+
+      <form class="space-y-4">
+        <div>
+          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+          <input type="email" name="email" id="email"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div>
+          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
+          <input type="password" name="password" id="password"
+            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm">
+        </div>
+        <div class="flex items-center justify-between">
+          <div class="text-sm">
+            <a href="#" class="font-medium text-red-600 hover:text-red-500">Forgot your password?</a>
+          </div>
+        </div>
+        <button type="submit"
+          class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700">Log
+          in</button>
+      </form>
+      <div class="mt-4">
+        <div class="relative">
+          <div class="absolute inset-0 flex items-center">
+            <div class="w-full border-t border-gray-300"></div>
+          </div>
+          <div class="relative flex justify-center text-sm">
+            <span class="px-2 bg-white text-gray-500">OR</span>
+          </div>
+        </div>
+        <div class="mt-4 grid grid-cols-1 gap-4">
+          <button
+            class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+            Continue with Facebook
+          </button>
+          <button
+            class="w-full inline-flex justify-center py-2 px-4 border border-gray-300 rounded-md shadow-sm bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+            Continue with Google
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+</body>
+<script src="/javascript/script.js"></script>
+
 </html>
