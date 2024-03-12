@@ -34,7 +34,7 @@
       <div id="login" class="flex-none mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white">
         <button>Log In</button>
       </div>
-      <div class="flex-none bg-gray-300 py-1.5 px-2 hover:bg-gray-400 rounded-full">
+      <div id="signup" class="flex-none bg-gray-300 py-1.5 px-2 hover:bg-gray-400 rounded-full">
         <button>Sign Up</button>
       </div>
     </div>
@@ -46,93 +46,78 @@
 
   <div id="loginpage"
     class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center">
-    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center text-center">
+    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center ">
 
-      <div class="inline-flex justify-center">
-        <div class="">
+      <div class="flex justify-between">
+        <div class="h-9 w-9"></div>
+        <div class="align-middle">
           <img src="/imgs/Pinterest-Logo-small.png" alt="logo">
         </div>
-        <div class="right-0">
-          <button id="close"
-            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center me-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 10">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                d="M1 5h12m0 0L9 1m4 4L9 9" />
+        <div class="h-9 w-9 hover:bg-slate-200 rounded-full">
+          <button id="closelogin">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                fill="#0F1729" />
             </svg>
           </button>
-
         </div>
       </div>
 
 
 
-      <h2 class="text-xl font-bold mb-4">Welcome to Pinterest</h2>
+      <h2 class="text-3xl font-semibold font-sans mx-4 my-3 text-center">Welcome to Pinterest</h2>
 
-      <form class="space-y-4">
-        <div>
-          <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-          <input type="email" name="email" id="email"
-            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm">
+    </div>
+  </div>
+  <div id="signuppage"
+    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center">
+    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center ">
+
+      <div class="flex justify-between">
+        <div class="h-9 w-9"></div>
+        <div class="align-middle">
+          <img src="/imgs/Pinterest-Logo-small.png" alt="logo">
         </div>
-        <div>
-          <label for="password" class="block text-sm font-medium text-gray-700">Password</label>
-          <input type="password" name="password" id="password"
-            class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm">
-        </div>
-        <div class="flex items-center justify-between">
-          <div class="text-sm">
-            <a href="#" class="font-medium text-red-600 hover:text-red-500">Forgot your password?</a>
-          </div>
-        </div>
-        <button type="submit"
-          class="w-full flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-red-600 hover:bg-red-700">Log
-          in</button>
-      </form>
-      <div class="mt-4">
-        <div class="relative">
-          <div class="absolute inset-0 flex items-center">
-            <div class="w-full border-t border-gray-300"></div>
-          </div>
-          <div class="relative flex justify-center text-sm">
-            <span class="px-2 bg-white text-gray-500">OR</span>
-          </div>
-        </div>
-        <div class="mt-4 grid grid-cols-1 gap-4">
-          <button type="button"
-            class="text-white bg-[#3b5998] hover:bg-[#3b5998]/90 focus:ring-4 focus:outline-none focus:ring-[#3b5998]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#3b5998]/55 me-2 mb-2">
-            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 8 19">
-              <path fill-rule="evenodd"
-                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
-                clip-rule="evenodd" />
+        <div class="h-9 w-9 hover:bg-slate-200 rounded-full">
+          <button id="closesignup">
+            <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <svg width="" height="" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M5.29289 5.29289C5.68342 4.90237 6.31658 4.90237 6.70711 5.29289L12 10.5858L17.2929 5.29289C17.6834 4.90237 18.3166 4.90237 18.7071 5.29289C19.0976 5.68342 19.0976 6.31658 18.7071 6.70711L13.4142 12L18.7071 17.2929C19.0976 17.6834 19.0976 18.3166 18.7071 18.7071C18.3166 19.0976 17.6834 19.0976 17.2929 18.7071L12 13.4142L6.70711 18.7071C6.31658 19.0976 5.68342 19.0976 5.29289 18.7071C4.90237 18.3166 4.90237 17.6834 5.29289 17.2929L10.5858 12L5.29289 6.70711C4.90237 6.31658 4.90237 5.68342 5.29289 5.29289Z"
+                fill="#0F1729" />
             </svg>
-            Sign in with Facebook
-          </button>
-          <button type="button"
-            class="text-white bg-[#4285F4] hover:bg-[#4285F4]/90 focus:ring-4 focus:outline-none focus:ring-[#4285F4]/50 font-medium rounded-lg text-sm px-5 py-2.5 text-center inline-flex items-center dark:focus:ring-[#4285F4]/55 me-2 mb-2">
-            <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
-              viewBox="0 0 18 19">
-              <path fill-rule="evenodd"
-                d="M8.842 18.083a8.8 8.8 0 0 1-8.65-8.948 8.841 8.841 0 0 1 8.8-8.652h.153a8.464 8.464 0 0 1 5.7 2.257l-2.193 2.038A5.27 5.27 0 0 0 9.09 3.4a5.882 5.882 0 0 0-.2 11.76h.124a5.091 5.091 0 0 0 5.248-4.057L14.3 11H9V8h8.34c.066.543.095 1.09.088 1.636-.086 5.053-3.463 8.449-8.4 8.449l-.186-.002Z"
-                clip-rule="evenodd" />
-            </svg>
-            Sign in with Google
           </button>
         </div>
       </div>
+
+
+
+      <h2 class="text-3xl font-semibold font-sans mx-4 my-3 text-center">Welcome to Pinterest</h2>
+
     </div>
   </div>
 
 
 
+
+
+
+
+
+
+
+
+
   <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
-    <div class="snap-start flex h-[95%] w-max bg-white">
-      
+    <div class="snap-start flex md:h-[95%] w-max bg-white">
+
     </div>
-    <div class="snap-start flex h-screen w-full bg-yellow-200"></div>
-    <div class="snap-start flex h-screen w-full bg-green-100"></div>
-    <div class="snap-start flex h-screen w-full bg-pink-100"></div>
-    <div class="snap-start flex h-screen w-full bg-white"></div>
+    <div class="snap-start flex md:h-screen w-full bg-yellow-200"></div>
+    <div class="snap-start flex md:h-screen w-full bg-green-100"></div>
+    <div class="snap-start flex md:h-screen w-full bg-pink-100"></div>
+    <div class="snap-start flex md:h-screen w-full bg-white"></div>
 
 
   </div>
