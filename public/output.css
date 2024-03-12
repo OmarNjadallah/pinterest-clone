@@ -645,13 +645,8 @@ video {
   height: 65%;
 }
 
-.h-lvh {
-  height: 100lvh;
-}
-
-.h-max {
-  height: -moz-max-content;
-  height: max-content;
+.h-\[95\%\] {
+  height: 95%;
 }
 
 .h-screen {
@@ -668,6 +663,11 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-max {
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .w-screen {
