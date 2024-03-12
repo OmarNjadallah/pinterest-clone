@@ -10,7 +10,7 @@
 </head>
 
 <body class="h-screen select-none ">
-  <nav class="fixed w-screen">
+  <nav class="fixed w-screen z-50">
     <div class="flex font-semibold bg-white mt-0 ml-0 p-2.5 px-6 py-6">
       <div class="flex-none mt-0">
         <a href="#"><img src="/imgs/Pinterest-Logo.png" alt="pintrest logo" /></a>
@@ -111,10 +111,27 @@
 
 
   <div class="snap-y snap-mandatory h-screen w-screen overflow-scroll">
-    <div class="snap-start flex md:h-[95%] w-max bg-white">
+    <div class="snap-start flex md:h-[95%] w-max bg-white"></div>
+    <div class="snap-start flex md:h-screen w-full bg-yellow-200">
+      <div class="w-[50%] h-screen">
 
+      </div>
+      <div class="w-[50%] h-screen flex items-center justify-center text-center">
+        <div class="justify-center text-center align-middle">
+          <div>
+            <span class="text-6xl text-red-500 font-bold text-center ">Search For an idea</span>
+          </div>
+          <div class="justify-center align-middle py-5">
+            <span class="text-center text-red-500 w-[25%] ">What do you want to try next? Think <br> of something you’re
+              into—like “easy <br>chicken dinner”—and see what you <br> find </span>
+          </div>
+          <div class="">
+            <button
+              class=" w-[25%] mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white ">Explore</button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="snap-start flex md:h-screen w-full bg-yellow-200"></div>
     <div class="snap-start flex md:h-screen w-full bg-green-100"></div>
     <div class="snap-start flex md:h-screen w-full bg-pink-100"></div>
     <div class="snap-start flex md:h-screen w-full bg-white"></div>
