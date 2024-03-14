@@ -619,6 +619,14 @@ video {
   margin-left: 0px;
 }
 
+.ml-2 {
+  margin-left: 0.5rem;
+}
+
+.ml-5 {
+  margin-left: 1.25rem;
+}
+
 .ml-8 {
   margin-left: 2rem;
 }
@@ -653,6 +661,10 @@ video {
 
 .mt-20 {
   margin-top: 5rem;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .flex {
@@ -996,6 +1008,11 @@ video {
 .text-6xl {
   font-size: 3.75rem;
   line-height: 1;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
