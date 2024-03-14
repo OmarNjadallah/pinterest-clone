@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="!scroll-smooth">
 
 <head>
   <meta charset="UTF-8" />
@@ -9,8 +9,8 @@
 
 </head>
 
-<body class="h-screen select-none ">
-  <nav class="fixed w-screen z-50">
+<body class=" overflow-hidden h-screen w-screen select-none s">
+  <nav class="fixed w-screen z-40">
     <div class="flex font-semibold bg-white mt-0 ml-0 p-2.5 px-6 py-6">
       <div class="flex-none mt-0">
         <a href="#"><img src="/imgs/Pinterest-Logo.png" alt="pintrest logo" /></a>
@@ -45,7 +45,7 @@
 
 
   <div id="loginpage"
-    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center">
+    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center z-50">
     <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center ">
 
       <div class="flex justify-between">
@@ -72,8 +72,8 @@
     </div>
   </div>
   <div id="signuppage"
-    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center">
-    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[65%] justify-center ">
+    class="hidden fixed left-0 top-0 bg-black bg-opacity-50 w-screen h-screen justify-center items-center z-50">
+    <div class="bg-white rounded-3xl shadow-md p-8 w-[25%] h-[80%] justify-center ">
 
       <div class="flex justify-between">
         <div class="h-9 w-9"></div>
@@ -164,9 +164,29 @@
 
 
 
-    <div class="snap-start flex md:h-screen w-full bg-pink-100">
-      <div class="w-[50%] h-screen">
+    <div class="snap-start flex md:h-screen w-full bg-pink-100 snap-always">
+      <div class="w-[50%] h-[100%] z-20 relative">
+        <a href="https://www.pinterest.com/search/pins/?q=lip%20shade" target="_blank">
+          <img src="/imgs/shop-de8ddf10.png" alt="woman" class="h-[100%]">
 
+          <div class="absolute z-30 bottom-36 left-20 h-[383px] w-[213px] rounded-xl  flex-col">
+            <div class="overflow-hidden rounded-xl">
+              <img src="/imgs/creator-pin-img-3bed5463.png" alt="creator-pin-img-3bed5463">
+            </div>
+            <div class="text-center text-white flex-col z-30 bg-transparent justify-center py-2">
+              <span class="font-semibold">
+                Scout the City
+              </span>
+              <br>
+              <span>
+                56.7k followers
+              </span>
+            </div>
+            <div class="rounded-full h-[100px] w-[100px] -ml-14 -mt-32">
+              <img src="/imgs/creator-avatar-262dfeba.png" alt="avatar">
+            </div>
+          </div>
+        </a>
       </div>
       <div class="w-[50%] h-screen flex items-center justify-center text-center">
         <div class="justify-center text-center align-middle">
@@ -178,8 +198,10 @@
               things and ideas from people <br>around the world.</span>
           </div>
           <div class="">
-            <button
-              class=" w-[25%] mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white ">Explore</button>
+            <a href="https://www.pinterest.com/ideas/beauty/935541271955/">
+              <button
+                class=" w-[25%] mr-3 py-1.5 px-2 bg-red-500 hover:bg-red-600 rounded-full text-white ">Explore</button>
+            </a>
           </div>
         </div>
       </div>
@@ -188,7 +210,8 @@
       <div class="w-[50%] h-screen flex items-center justify-center text-center">
         <div class="justify-center text-center align-middle">
           <div>
-            <span class="text-6xl whitespace-normal text-white font-bold text-center ">Sign up to <br> get your <br>ideas</span>
+            <span class="text-6xl whitespace-normal text-white font-bold text-center ">Sign up to <br> get your
+              <br>ideas</span>
           </div>
         </div>
       </div>
