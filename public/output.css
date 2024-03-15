@@ -603,20 +603,24 @@ video {
   margin-bottom: 0.75rem;
 }
 
-.-mb-14 {
-  margin-bottom: -3.5rem;
-}
-
 .-ml-14 {
   margin-left: -3.5rem;
 }
 
-.-mt-14 {
-  margin-top: -3.5rem;
+.-mt-20 {
+  margin-top: -5rem;
 }
 
 .-mt-32 {
   margin-top: -8rem;
+}
+
+.-mt-36 {
+  margin-top: -9rem;
+}
+
+.-mt-72 {
+  margin-top: -18rem;
 }
 
 .mb-\[65px\] {
@@ -716,10 +720,6 @@ video {
   height: 235px;
 }
 
-.h-\[350px\] {
-  height: 350px;
-}
-
 .h-\[383px\] {
   height: 383px;
 }
@@ -752,6 +752,10 @@ video {
   width: 170px;
 }
 
+.w-\[1750px\] {
+  width: 1750px;
+}
+
 .w-\[213px\] {
   width: 213px;
 }
@@ -766,10 +770,6 @@ video {
 
 .w-\[25\%\] {
   width: 25%;
-}
-
-.w-\[250px\] {
-  width: 250px;
 }
 
 .w-\[400px\] {
@@ -964,11 +964,6 @@ video {
   padding-bottom: 0.5rem;
 }
 
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
-}
-
 .py-5 {
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -1072,6 +1067,33 @@ video {
 
 .ease-in {
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+}
+
+.card {
+  display: block;
+  height: 370px;
+  width: 250px;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-color: transparent;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.cardimg {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  background-size: cover;
+}
+
+.cardscol {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .hover\:h-\[250px\]:hover {
