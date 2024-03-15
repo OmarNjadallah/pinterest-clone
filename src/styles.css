@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .card{
-    @apply rounded-xl overflow-hidden bg-transparent h-[370px] w-[250px] shrink-0  block py-3;
+    @apply rounded-xl overflow-hidden bg-transparent h-[370px] w-[230px] shrink-0  block py-3;
 }
 .cardimg{
     @apply h-[100%] w-full bg-cover rounded-xl overflow-hidden;
