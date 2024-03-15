@@ -17,3 +17,13 @@ document.getElementById("closesignup").addEventListener('click',function(){
     let list1 = document.getElementById('signuppage');
     list1.classList.replace("flex","hidden");
 });
+
+
+document.getElementById("personal").addEventListener('click',function(){
+    document.getElementById("personaldiv").classList.add('hidden');
+    document.getElementById("businessdiv").classList.remove('hidden');
+});
+document.getElementById("business").addEventListener('click',function(){
+    document.getElementById("businessdiv").classList.add('hidden');
+    document.getElementById("personaldiv").classList.remove('hidden');
+});
