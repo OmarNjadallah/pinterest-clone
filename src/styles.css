@@ -18,3 +18,19 @@
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
+
+
+
+.textchanger{
+    animation: moveUpAndDisappear 5000ms ease forwards;
+}
+@keyframes moveUpAndDisappear{
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(-10px); /* Move the text 40px up */
+        opacity: 1; /* Make the text transparent */
+      }
+}
