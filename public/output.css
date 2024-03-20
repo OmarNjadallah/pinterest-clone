@@ -788,6 +788,10 @@ video {
   height: 400px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[456px\] {
   height: 456px;
 }
@@ -902,11 +906,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
 }
 
 .w-screen {
@@ -1300,10 +1299,6 @@ video {
 }
 
 @media (min-width: 768px) {
-  .md\:h-\[95\%\] {
-    height: 95%;
-  }
-
   .md\:h-screen {
     height: 100vh;
   }
