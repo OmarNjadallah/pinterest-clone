@@ -1258,6 +1258,15 @@ video {
   padding-right: 0.75rem;
 }
 
+.no-scrollbar::-webkit-scrollbar{
+  display: none;
+}
+
+.no-scrollbar{
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
 .hover\:h-\[250px\]:hover {
   height: 250px;
 }
